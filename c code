@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<stdlib.h>
+void main()
+{
+float x,y;
+char op;
+printf("enter values of x and y");
+scanf("%f%f",&x,&y);
+while(1)
+printf("enter the operator");
+scanf(" %c",&op);
+switch(op)
+{
+case'+':printf("%f",x + y);
+break;
+case'-':printf("%f",x - y);
+break;
+case'*':printf("%f",x * y);
+break;
+case'/':printf("%f",x / y);
+break;
+default:if(op=='q')
+  exit(0);
+}
+}
+}
